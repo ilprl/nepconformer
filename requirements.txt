@@ -1,0 +1,4 @@
+pybind11
+fasttext-wheel
+nemo_toolkit[asr]
+numpy

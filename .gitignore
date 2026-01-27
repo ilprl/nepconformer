@@ -1,0 +1,11 @@
+# files
+*.api
+*dump.json
+
+
+# folders
+nemo_experiments
+NeMo
+tokens
+venv
+wav
