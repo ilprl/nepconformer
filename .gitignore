@@ -1,6 +1,7 @@
 # files
 *.api
 *dump.json
+.nfs*
 
 
 # folders
