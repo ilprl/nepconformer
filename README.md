@@ -7,6 +7,30 @@ NepConformer is an End-to-End Automatic Speech Recognition (ASR) system designed
 - Utilizes Conformer architecture for enhanced ASR performance.
 - Implements advanced techniques like spectrogram augmentation and SentencePiece Unigram tokenizer.
 
+## Dataset
+The model uses the OSLR54 dataset. you can add your own dataset.
+You need `manifest` files.
+
+Folder structure:
+```
+dataset
+  - DS_NAME
+      - manifest_train.json
+      - manifest_test.json
+      - manifest_val.json
+      - wav
+          - all the sound files should be here.
+```
+
+Sample `manifest.json`
+```
+{"audio_filepath": "dataset/oslr54/wav/e8/e84d149646.wav", "duration": 2.53, "text": "उनी प्रख्यत सोफोत्वरे"}
+{"audio_filepath": "dataset/oslr54/wav/07/073a200bf6.wav", "duration": 1.63, "text": "मन्दिर निर्माणको लागि"}
+{"audio_filepath": "dataset/oslr54/wav/5b/5bcd9bcc55.wav", "duration": 1.53, "text": "शर्मा बताउनुहुन्छ"}
+```
+Note: it is not exactly json format :-(
+
+
 ## Model Training
 
 Prepare the environment
